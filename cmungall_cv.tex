@@ -1,0 +1,285 @@
+
+%% http://theprofessorisin.com/2012/01/12/dr-karens-rules-of-the-academic-cv/
+
+\documentclass[11pt,fullpage]{article}
+
+\usepackage{hyperref}
+\usepackage{geometry}
+%\usepackage{listliketab}
+\usepackage{array}
+\usepackage{longtable}
+
+\usepackage{natbib}
+\usepackage{bibentry}
+\nobibliography*
+%\bibliographystyle{apa}
+
+% Palatino font
+%\usepackage[T1]{fontenc}
+%\usepackage[sc,osf]{mathpazo}
+
+\def\name{Christopher J Mungall}
+
+\reversemarginpar
+
+\geometry{
+  body={6.5in, 8.5in},
+  left=1.0in,
+  top=1.0in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Custom section fonts
+%\usepackage{sectsty}
+%\sectionfont{\rmfamily\mdseries\Large}
+%\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+  }
+}{
+  \end{list}
+}
+
+\begin{document}
+\bibliographystyle{apalike}
+
+% Print name centered and bold:
+\centerline{\Large \bf \name}
+
+\vspace{0.25in}
+
+\begin{minipage}{0.50\linewidth}
+  \href{http://www.lbl.gov/}{Lawrence Berkeley National Laboratory} \\
+  Genomics Division \\
+  1 Cyclotron Road \\
+  Berkeley CA 94720
+\end{minipage}
+\begin{minipage}{0.50\linewidth}
+  \begin{tabular}{ll}
+    Phone: & (510) 486-4170 \\
+    Email: & \href{mailto:cjmungall@lbl.gov}{cjmungall@lbl.gov} \\
+%    Homepage: & \href{http:///}{www...} \\
+  \end{tabular}
+\end{minipage}
+
+\section*{Education}
+
+\begin{tabular}{ll}
+	2011 & {\bf Ph.D.} Bioinformatics, University of Edinburgh \\
+	1993 & {\bf BSc.} Artificial Intelligence and Computer
+        Science, University of Edinburgh \\
+\end{tabular}
+
+\section*{Employment}
+
+% Give institution, department, title, and dates (year only) of
+% employment.  Be sure and reflect joint appointments if you have one
+
+\begin{tabular}{ll}
+	2006-Present & {\bf Scientist} Genomics Division, Lawrence
+        Berkeley National Laboratory \\
+	2001-2006 & {\bf Bioinformatics specialist} Howard Hughes
+        Medical Institute, UC Berkeley \\
+	1999-2006 & {\bf Bioinfomatician} Life Sciences Division, Lawrence
+        Berkeley National Laboratory \\
+	1994-1999 & {\bf Bioinformatician.} Roslin Institute,
+        Edinburgh, UK \\
+\end{tabular}
+
+\section*{Publications}
+
+\subsection*{Refereed Journal Articles}
+
+\setlength{\extrarowheight}{10pt}
+
+\begin{longtable}{p{0.5in}|p{5.5in}}
+
+ 2013 & \bibentry{Smedley2013} \\
+      & \bibentry{Kohler2013} \\
+      & \bibentry{Hill2013} \\
+      & \bibentry{Doelken2013} \\
+      & \bibentry{EganaAranguren2013} \\
+      & \bibentry{Cooper2013} \\
+ 2012 & \bibentry{Mungall2012} \\
+      & \bibentry{Thomas2012} \\
+      & \bibentry{Osumi-Sutherland2012} \\
+      & \bibentry{Walls2012} \\
+      & \bibentry{Chen2012} \\
+ 2011 & \bibentry{Meehan2011} \\
+      & \bibentry{tirmizi2011mapping} \\
+      & \bibentry{Kohler2011} \\
+      & \bibentry{Hoehndorf2011} \\
+ 2010 & \bibentry{deegan2010} \\
+      & \bibentry{Mungall2010GOXP} \\
+      & \bibentry{Antezanna2010} \\
+ 2009 & \bibentry{MungallPheno2009} \\
+      & \bibentry{skinner2009jbrowse} \\
+      & \bibentry{Hancock2009} \\
+      & \bibentry{Schober2009} \\
+      & \bibentry{Masci2009} \\
+      & \bibentry{Diehl2009} \\
+ 2008 & \bibentry{Yandell2008} \\
+      & \bibentry{Pfeiffer2008} \\
+      & \bibentry{Carbon2008} \\
+ 2007 & \bibentry{Mungall2007Chado} \\
+      & \bibentry{Smith2007Dmel} \\
+      & \bibentry{Smith2007} \\
+ 2006 & \bibentry{Yandell2006} \\
+      & \bibentry{Rubin2006} \\
+ 2005 & \bibentry{Smith2005} \\
+      & \bibentry{Eilbeck2005} \\
+ 2004 & \bibentry{Mungall2004} \\
+      & \bibentry{Harris2004a} \\
+ 2002 & \bibentry{Mungall2002} \\
+      & \bibentry{Stein2002} \\
+      & \bibentry{Stajich2002} \\
+      & \bibentry{Misra2002} \\
+      & \bibentry{Lewis2002} \\
+      & \bibentry{Gardner2002} \\
+      & \bibentry{Bergman2002} \\
+ 2001 & \bibentry{Hu2001} \\
+      & \bibentry{GOConsortium2001} \\
+ 2000 & \bibentry{Rubin2000} \\
+ 1998 & \bibentry{Hu1998} \\
+
+
+\end{longtable}
+
+\subsection*{Book Chapters}
+
+\begin{longtable}{p{0.5in}|p{5.5in}}
+% Use: ./util/parsebib.pl incollection MyPubs.bib  | sort -r
+
+  2007 & \bibentry{Haendel2007} \\
+
+\end{longtable}
+
+\subsection*{Conference Proceedings}
+
+\begin{longtable}{p{0.5in}|p{5.5in}}
+
+ 2011 & \bibentry{mungall2011posh} \\
+ 2009 & \bibentry{mungall_experiences_2009} \\
+      & \bibentry{Vangelis_2009} \\
+      & \bibentry{Gkoutos2009EMBC} \\
+ 2007 & \bibentry{Mungall2007OWLED} \\
+
+\end{longtable}
+
+\subsection*{Manuscripts in submission}
+
+\begin{longtable}{p{0.5in}|p{5.5in}}
+
+ 2013 & A promoter level mammalian expression atlas. Submitted to Nature. Role: middle author \\
+      & The Porifera Ontology (PORO). Submitted to JBMS. Role: senior author \\
+      & Uberon in 2013. Submitted to JBMS. Role: senior author \\
+      & The Cell Ontology in 2013. Submitted to JBMS. Role: senior author \\
+      & The Environment Ontology. Submitted to JBMS. Role: middle author \\
+      & The Biological Spatial Ontology. Submitted to JBMS. Role: middle author \\
+      & The GO Cell Component Ontology. Submitted to JBMS. Role: middle author \\
+      & The Cell Line Ontology (CLO). Submitted to JBMS. Role: middle author \\
+
+\end{longtable}
+
+%\section*{Awards and Honors}
+
+
+%\setlength{\extrarowheight}{5pt}
+
+\section*{Grants and Fellowships}
+
+\begin{tabular}{>{\everypar{\hangindent0.5in}}p{6in}}
+	\textbf{Semantic LAMHDI} to develop a semantic infrastructure
+        for linking human diseases to model systems. 2012-2016. Role: CoPI. \\
+\end{tabular}
+
+%\section*{Additional Papers Presented at Professional Meetings}
+
+\section*{Invited Talks}
+
+\begin{longtable}{p{0.5in}|p{5.5in}}
+
+% Give title, institutional location, and date. Year only (not month
+% or day) at left.  Month and day of talk go into entries.
+
+ 2012 &  Helping Machines to Help Us (Keynote) Rocky Bioinformatics
+ Summit, November 2012\\
+ 2009 & Logic Programming in Bioinformatics (Keynote) International
+ Conference on Logic Programming, Pasadena, July 2009 \\
+
+\end{longtable}
+
+
+%\section*{Conference Activity}
+% see below
+
+% These entries will include: Name of paper, name of conference,
+% date. Year (Year only) on left as noted above. Month and date-range
+% of conference in the entry itself (ie, March 22-25).
+
+\section*{Teaching Experience}
+
+\begin{tabular}{>{\everypar{\hangindent0.5in}}p{6in}}
+	2001: \textbf{Module Organizer}. Taught perl scripting module
+        as part of International Training Course on Bioinformatics,
+        FIOCRUZ, Rio de Janeiro, Brazil, May 21-June 15, 2001 \\
+	2001, 2002, 2003: \textbf{Teaching assistant} Programming for
+        biology. Cold Spring Harbor Laboratory\\
+\end{tabular}
+
+\section*{Service}
+
+% Include journal manuscript review work (with journal titles
+% [mss. review CAN be given its own separate heading if you do a lot
+% of this work]), leadership of professional organizations, etc. Some
+% people put panel organizing under service; check conventions in your
+% field.
+
+\begin{tabular}{>{\everypar{\hangindent0.5in}}p{6in}}
+
+2006-Present : \textbf{Open Biological Ontologies Library Coordinator} \\
+2011, 2012, 2013: \textbf{Program Committee Member, International Conference on
+  Biomedical Ontology}\\
+2011: \textbf{Program Committee Member, OWL: Experience and Directions} \\
+2011: \textbf{Program Committee Member, ISMB/EECB} \\
+%\textbf{Manhattan Comp. Night and Day High School ESL Volunteer}, 2006 to Present \\
+%\hspace{0.5in}Teach immigrant students English, science, mathematics, and TOEFL/SAT prep. \\
+\end{tabular}
+
+% \section*{References}
+
+% Give name and full title. 
+
+
+
+
+
+% Footer
+\bigskip
+\begin{center}
+  \begin{footnotesize}
+    Last updated: \today
+  \end{footnotesize}
+\end{center}
+
+
+
+\nobibliography{MyPubs}
+\end{document}
