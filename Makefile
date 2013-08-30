@@ -4,4 +4,4 @@ all: cmungall_cv.pdf
 	latex $* && latex $* && bibtex $* && latex $* && pdflatex $*
 
 clean:
-	rm *.{aux,bbl,log,out,blg}
+	rm *.{aux,bbl,log,out,blg,dvi}
