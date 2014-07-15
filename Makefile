@@ -1,4 +1,4 @@
-all: tbox2abox.pdf
+all: cmungall_cv.pdf
 
 %.pdf: %.tex
 	latex $* && latex $* && bibtex $* && latex $* && pdflatex $*
