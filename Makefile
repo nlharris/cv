@@ -1,6 +1,6 @@
 all: cmungall_cv.pdf
 
-%.pdf: %.tex
+%.pdf: %.tex MyPubs.bib
 	latex $* && latex $* && bibtex $* && latex $* && pdflatex $*
 
 clean:
