@@ -1,6 +1,6 @@
 all: cmungall_cv.pdf
 
-%.pdf: %.tex
+%.pdf: %.tex projects.tex
 	latex $* && latex $* && bibtex $* && latex $* && pdflatex $*
 
 clean:

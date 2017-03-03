@@ -1,7 +1,13 @@
 \newcommand{\pinfo}[4]{
-  #1 & Role: #4 & Website: \href{http://#3}{#3} \\
-\multicolumn{3}{|c|}{#2} \\
+  #1 & \multicolumn{2}{l}{#2} \\
+     & Role: #4 & Website: \href{http://#3}{#3} \\
+ \\
 }
+
+%\newcommand{\pinfo}[4]{
+%  #1 & Role: #4 & Website: \href{http://#3}{#3} \\
+%\multicolumn{3}{}{#2} \\
+%}
 
 \section*{Informatics Projects}
 
@@ -47,5 +53,6 @@ For additional contributions, see publication list
     \pinfo{FlyBase}{Drosophila melanogaster database}{flybase.org}{Genome Re-annotation}
     \pinfo{BDGP}{Berkeley Drosophila Genome Project}{bdgp.org}{Analysis Pipeline}
     \pinfo{ArkDb}{Genome mapping database for farmed and other animal species}{thearkdb.org}{Designer}
-\end{longtable}
 
+
+\end{longtable}
